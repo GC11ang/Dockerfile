@@ -1,2 +1,4 @@
 FROM nginx
-RUN echo '这是一个本地构建的Nginx镜像' >/usr/share/nginx/html/index.html
+RUN echo '<h1>Hello World<h1>' >/usr/share/nginx/html/index.html
+RUN mkdir -p /usr/src/test
+
